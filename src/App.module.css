@@ -8,3 +8,8 @@
     
 }
 
+@media (max-width: 767px) {
+    .phoneBook {
+        background-size: 100% auto;
+    }
+}
