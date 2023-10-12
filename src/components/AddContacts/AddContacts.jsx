@@ -56,7 +56,6 @@ export function AddContacts() {
             name="name"
             placeholder="Enter name"
             pattern="^[a-zA-Z]+(([' -][a-zA-Z ])?[a-zA-Z]*)*$"
-            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             onChange={handleNameChange}
             required
             value={name}
@@ -67,9 +66,7 @@ export function AddContacts() {
             type="tel"
             name="number"
             placeholder="Enter phone number"
-            pattern="^[a-zA-Z]+(([' -][a-zA-Z ])?[a-zA-Z]*)*$"
-            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-            onChange={handleNumberChange}
+            pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
             required
             value={number}
           ></input>
